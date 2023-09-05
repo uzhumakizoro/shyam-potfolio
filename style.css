@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(assets/gray.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .box{
+    height: 86vh;
+    width: 75%;
+    padding: 0 20px;
+    background-color: rgb(255, 255, 255, 0.1);
+    z-index: 10;
+    border: 2px solid rgb(255, 255, 255, 0.7);
+    border-radius: 20px;
+    display: flex;
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px rgb(10, 10, 10, 0.15);
+}
+
+.container nav{
+    height: 7%;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+    padding: 20px;
+}
+.container .logo{
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    margin-left: 35px;
+}
+.container .logo::first-letter{
+    color:brown;
+}
+
+.container ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.container nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    transition: 0.3s;
+}
+
+.container nav li a:hover{
+    color: white;
+}
+
+.content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 8%;
+    padding-left: 80px;
+}
+
+.content .section-1{
+    position: relative;
+    width: 40%;
+}
+.content .section-1 h1{
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #000;
+}
+
+.content .section-1 h3{
+    font-size: 24px;
+    color: rgb(12, 12, 12);
+    margin-bottom: 10px;
+}
+
+.content .section-1 p{
+    font-size: 15px;
+    color: blueviolet;
+    margin-bottom: 50px;
+}
+
+.content .btn{
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: #6f6f6f;
+    border:  3px solid #6f6f6f;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+    color: #6f346f;
+}
+
+.content .btn:hover{
+    background-color: #fff;
+    color: #6f346f;
+
+}
+
+.content .section-2{
+    width: 30%;
+    position: relative;
+}
+
+
+.content .section-2 img{
+    display: flex;
+    height: 300px;
+    width: 300px;
+    margin: auto 0;
+}
+
+ .socialicons{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map{
+    
+    width: 50%;
+    height: 400px;
+}
+.map iframe {
+    padding:10px 0px 100px 10px;
+    width:100%;
+    height:100%;
+}
+.contact{
+   display: flex;
+   justify-content: space-between;
+   margin: 30px;
+   padding: 80px; 
+   border: 1px
+    
+}
+.box{
+    display: flex;
+   justify-content: space-between;
+   margin: 30px;
+   padding: 80px; 
+   border: 1px
+}
